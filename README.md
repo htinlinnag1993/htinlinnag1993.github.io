@@ -1,1 +1,1 @@
-# [My Personal Portfolio Page built with Bootstrap](http://htinlinnaung.com/) - [Agency](http://htinlinnaung.com/)
+# [My Personal Portfolio Page built with Bootstrap](http://htinlinnaung.com/) - [Htin Linn Aung](http://htinlinnaung.com/)
