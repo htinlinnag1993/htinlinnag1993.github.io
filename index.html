@@ -129,7 +129,7 @@
                             <p class="text-white">About Me</p>
                             <!-- <p class="text-white">2</p> -->
                           </span>
-                          <p class="text-white">"   I'm currently in my senior year studying computer science in Queens College, City University of New York. Data Structures & Algorithms, Database Systems, Algorithms for Big Data, Internet & Web Technologies & Computer Architecture are my favorite classes. My study in CS helps me think and make decisions better. The idea of thinking everything in bits and making logical decisions always intrigues me.   "</p>
+                          <p class="text-white">"   I'm currently in my senior year studying computer science in Queens College. Data Structures & Algorithms, Database Systems, Algorithms for Big Data, Internet & Web Technologies & Computer Architecture are my favorite classes. My study in CS helps me think and make decisions better. The idea of thinking everything in bits and making logical decisions always intrigues me.   "</p>
                         </div>
                         <div class="col-2"></div>
                       </div>
@@ -152,7 +152,7 @@
                             <p class="text-white">About Me</p>
                             <!-- <p class="text-white">3</p> -->
                           </span>
-                          <p class="text-white">"   I have experience developing & designing softwares & games for the web & VR, from simple landing pages to progressive applications. I thrive & learn better by always trying to understand and help others. When I'm not in front of a computer screen, I'm probably teaching, traveling, drawing, taking photographs, reading on a new topic, playing games, kickboxing, or strength-training.   "</p>
+                          <p class="text-white">"   I have experience developing & designing softwares & games for the web & VR. I am always fasicinated by people & technologies. I thrive & learn better by always trying to understand and help others. When I'm not in front of a computer screen, I'm probably teaching, traveling, drawing, taking photographs, reading on a new topic, playing games, kickboxing, or strength-training.   "</p>
                         </div>
                         <div class="col-2"></div>
                       </div>
@@ -161,7 +161,8 @@
                           ----------
                         </div>
                       </div>
-                    </div><div class="carousel-item">
+                    </div>
+                    <div class="carousel-item">
                       <div class="row justify-content-center">
                         <div class="col-4">
                           ----------
@@ -174,7 +175,7 @@
                             <p class="text-white">About Me</p>
                             <!-- <p class="text-white">4</p> -->
                           </span>
-                          <p class="text-white">"   My curiousity & enthusiasm always lead me towards interesting & exciting opportunities. I am always fasicinated by people & new technologies. I enjoy working with supportive & inspiring people as well as independently by myself sometimes. Energy is infectious & I always try to provide my best to my peers. I am not limited & very open to any type of job, cause or project opportunity. Please feel free to reach out to me. May be we could grab coffee & briefly chat.   "</p>
+                          <p class="text-white">"   My curiousity & enthusiasm always lead me towards interesting & exciting opportunities. I enjoy working with supportive & inspiring people as well as independently by myself. Energy is infectious & I always try to provide my best to my peers. I am not limited & open to any type of job, cause or project opportunity. Please feel free to reach out to me. May be we could grab coffee & briefly chat.   "</p>
                         </div>
                         <div class="col-2"></div>
                       </div>
@@ -185,6 +186,16 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- controls -->
+                  <a class="carousel-control-prev prev-slide" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next next-slide" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -209,7 +220,7 @@
               <i class="fa fa-graduation-cap  fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Computer Science</h4>
-            <p class="text-white">Queens College</p>
+            <p class="text-white">Queens College, CUNY</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -636,7 +647,18 @@
         $('[data-toggle="popover"]').popover({
           trigger: 'focus'
         });
+        // Cycles to the previous item
+        $(".prev-slide").click(function() {
+           $("#myCarousel").carousel('prev');
+        });
+
+        // Cycles to the next item
+        $(".next-slide").click(function() {
+           $("#myCarousel").carousel('next');
+        });
       });
+
+
     </script>
   </body>
 </html>
